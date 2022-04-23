@@ -4,24 +4,34 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SemaInterface"
-             mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="200" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="{x:Null}">
+             mc:Ignorable="d" d:DesignHeight="200" d:DesignWidth="200" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="{x:Null}">
     <Viewbox>
-        <Grid>
+        <Grid Width="200" Height="200" UseLayoutRounding="False">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
             <Rectangle x:Name="bar" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200">
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="Resources/pitch.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\Pitch.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>
             </Rectangle>
-            <Rectangle x:Name="arrow" HorizontalAlignment="Left" Height="40" Margin="52.5,80,0,0" VerticalAlignment="Top" Width="95">
+            <Rectangle x:Name="arrow" Height="40" Margin="50.881,79.836,54.119,80.164" Stroke="Black" Width="95" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" StrokeThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="Resources/uav_pitch.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\uav_pitch.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>

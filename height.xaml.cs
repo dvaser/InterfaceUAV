@@ -28,9 +28,8 @@ namespace SemaInterface
         public double pointerValue;
         public void Translate()
         {
-            TranslateTransform height = new TranslateTransform();
+            TranslateTransform height = new TranslateTransform(0, -pointerValue);
             state.RenderTransform = height;
-
             value.Content = pointerValue.ToString();
         }
     }

@@ -12,7 +12,7 @@
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="Resources/height.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\height.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>
@@ -27,7 +27,7 @@
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="Resources/heightState.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\heightState.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>

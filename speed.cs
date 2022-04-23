@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace SemaInterface
 {
     /// <summary>
-    /// speed.xaml etkileşim mantığı
+    /// Interaction logic for speed.xaml
     /// </summary>
     public partial class speed : UserControl
     {
@@ -26,14 +26,14 @@ namespace SemaInterface
         }
 
         public double pointerValue;
-
         public void Rotate()
         {
-            
-            RotateTransform rotate1 = new RotateTransform(pointerValue + 90);
+            RotateTransform rotate = new RotateTransform(pointerValue-45);
+            RotateTransform rotate1 = new RotateTransform(pointerValue +90);
+            arrow.RenderTransform = rotate;
             line.RenderTransform = rotate1;
 
-            value.Content = pointerValue.ToString();
+            value.Content = pointerValue.ToString() + "°";
         }
     }
 }

@@ -28,9 +28,10 @@ namespace SemaInterface
         public double pointerValue;
         public void Rotate()
         {
-            RotateTransform rotate = new RotateTransform(pointerValue);
+            RotateTransform rotate = new RotateTransform(pointerValue-45);
+            RotateTransform rotate1 = new RotateTransform(pointerValue +90);
             arrow.RenderTransform = rotate;
-            line.RenderTransform = rotate;
+            line.RenderTransform = rotate1;
 
             value.Content = pointerValue.ToString() + "°";
         }

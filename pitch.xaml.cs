@@ -33,6 +33,7 @@ namespace SemaInterface
             line.RenderTransform = rotate;
 
             value.Content = pointerValue.ToString() + "°";
+
         }
     }
 }

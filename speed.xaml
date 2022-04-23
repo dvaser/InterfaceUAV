@@ -4,37 +4,32 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SemaInterface"
-             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="200" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="{x:Null}">
+             d:DesignHeight="200" d:DesignWidth="200">
     <Viewbox>
         <Grid>
-            <Rectangle x:Name="bar" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200">
+            <Rectangle x:Name="bar" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0">
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="Resources/speed.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\speed.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>
             </Rectangle>
-            <Label x:Name="value" Content="0" HorizontalAlignment="Left" Height="50" Margin="65,70,0,0" VerticalAlignment="Top" Width="70" Foreground="White" FontSize="30" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition>
-                    </ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <ed:Arc x:Name="state"
-                        Fill="#FFA7D029"
-                        Height="200" Width="200"
-                        Stretch="None"
-                        ArcThickness="25"
-                        StartAngle="-140"
-                        EndAngle="-140"
-                        />
-            </Grid>
-            <Slider Height="20" VerticalAlignment="Center" Maximum="60" ValueChanged="Rotate"
-                />
+            <Rectangle x:Name="line" HorizontalAlignment="Left" Height="2" Margin="18,75,0,0" VerticalAlignment="Top" Width="17"  Fill="White" RenderTransformOrigin="5.858,1.476">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-68.749"/>
+                        <TranslateTransform X="-15.734" Y="21.598"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Label x:Name="value" Content="0" HorizontalAlignment="Left" Height="51" Margin="48,68,0,0" VerticalAlignment="Top" Width="107" Foreground="White" FontSize="30" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="0.614,0.914"/>
+
+
         </Grid>
     </Viewbox>
 </UserControl>

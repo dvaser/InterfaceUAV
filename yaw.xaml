@@ -12,7 +12,7 @@
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="file:///C:\Users\doguk\source\repos\SemaInterface\Resources\Yaw.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\Yaw.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>
@@ -29,7 +29,7 @@
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="file:///C:\Users\doguk\source\repos\SemaInterface\Resources\uav_yaw.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\uav_yaw.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>

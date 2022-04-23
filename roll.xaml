@@ -12,7 +12,7 @@
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="pack://siteoforigin:,,,/Resources/Roll.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\Roll.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>
@@ -29,7 +29,7 @@
                 <Rectangle.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="Resources/uav_roll.png"/>
+                            <BitmapImage UriSource="file:///C:\Users\aeker\source\repos\Interface\Resources\uav_roll.png"/>
                         </ImageBrush.ImageSource>
                     </ImageBrush>
                 </Rectangle.Fill>
